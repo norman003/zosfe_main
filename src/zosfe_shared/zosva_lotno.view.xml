@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_VIEW" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD25V>
+    <VIEWNAME>ZOSVA_LOTNO</VIEWNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <AGGTYPE>V</AGGTYPE>
+    <ROOTTAB>ZOSTB_LOTNO</ROOTTAB>
+    <DDTEXT>Librería de Lotes para Facturación Electrónica</DDTEXT>
+    <VIEWCLASS>C</VIEWCLASS>
+    <CUSTOMAUTH>G</CUSTOMAUTH>
+    <GLOBALFLAG>X</GLOBALFLAG>
+   </DD25V>
+   <DD26V_TABLE>
+    <DD26V>
+     <VIEWNAME>ZOSVA_LOTNO</VIEWNAME>
+     <TABNAME>ZOSTB_LOTNO</TABNAME>
+     <TABPOS>0001</TABPOS>
+     <FORTABNAME>ZOSTB_LOTNO</FORTABNAME>
+    </DD26V>
+   </DD26V_TABLE>
+   <DD27P_TABLE>
+    <DD27P>
+     <VIEWFIELD>MANDT</VIEWFIELD>
+     <TABNAME>ZOSTB_LOTNO</TABNAME>
+     <FIELDNAME>MANDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+    </DD27P>
+    <DD27P>
+     <VIEWFIELD>LOTNO</VIEWFIELD>
+     <TABNAME>ZOSTB_LOTNO</TABNAME>
+     <FIELDNAME>LOTNO</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <LOGFLAG>X</LOGFLAG>
+    </DD27P>
+    <DD27P>
+     <VIEWFIELD>IS_LOTNO_GR</VIEWFIELD>
+     <TABNAME>ZOSTB_LOTNO</TABNAME>
+     <FIELDNAME>IS_LOTNO_GR</FIELDNAME>
+     <SHLPORIGIN>F</SHLPORIGIN>
+     <VALEXI>X</VALEXI>
+    </DD27P>
+   </DD27P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

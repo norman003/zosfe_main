@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSED_CPECOR</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>CHAR08</DOMNAME>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Número del comprobante de percepción</DDTEXT>
+    <REPTEXT>CPE Número del comprobante de percepción</REPTEXT>
+    <SCRTEXT_S>CPE Nro</SCRTEXT_S>
+    <SCRTEXT_M>CPE Número</SCRTEXT_M>
+    <SCRTEXT_L>CPE Número del comprobante de percepción</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOSSDCL_PRO_EXTRAC_FE_RT</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>FE Retención</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>SU</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>W01</KEY>
+     <ENTRY>Representación impresa de la Retención Electrónica</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>W02</KEY>
+     <ENTRY>Autorizado mediante resolución de intendencia N° &amp;1/SUNAT</ENTRY>
+     <LENGTH>114</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>W03</KEY>
+     <ENTRY>Representación impresa de la Reversión de Retención Electrónica</ENTRY>
+     <LENGTH>126</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS dinamico</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_HOMO_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_HOMO_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_RETENCION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Retención</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_RETENCION_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Retención Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FREE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Limpiar variables y estructuras globales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_RR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: campo general de longitud 2 p.módulo de funciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_RT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: campo general de longitud 2 p.módulo de funciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_TIPDOC_RT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: campo general de longitud 2 p.módulo de funciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_TP_ELECTRO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo Serie de Retención</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CONSTANTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valores Constantes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Guia Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Guia Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DIRECCIONES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener direcciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LAST_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene último identificador baja</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SUNAT_RESOLUTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Resolución de Intendencia Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_MONTO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener texto de monto</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GW_LICENSE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>N° Instalación Sap</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_DATA_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Guia Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_DATA_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Guia Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Datos Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Datos Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Json Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Json Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Json Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SY_TO_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>sy to return</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_IDENTI_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar Identificador Baja</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar tablas Z Ret</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_RET_REV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar tablas Z Ret Reversión</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PE_MESSAGE</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tabla con informaciones de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_CNUMBER</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número correlativo Comprobante de Retención</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_FECFAC</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fecha de documento en documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_TIPDOC</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: campo general de longitud 2 p.módulo de funciones</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_RET</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRAE_DATA_RETENCION</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRAE_DATA_RETENCION_REV</CMPNAME>
+     <SCONAME>I_FECHA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fecha</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA_RET_REV</CMPNAME>
+     <SCONAME>I_FECHA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fecha</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LAST_RET_REV</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LAST_RET_REV</CMPNAME>
+     <SCONAME>R_IDRES</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ID Resúmen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SUNAT_RESOLUTION</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TEXT_MONTO</CMPNAME>
+     <SCONAME>I_BLDAT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fecha de documento en documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TEXT_MONTO</CMPNAME>
+     <SCONAME>I_MONTO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Precio neto</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TEXT_MONTO</CMPNAME>
+     <SCONAME>I_WAERS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clave de moneda</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SY_TO_RET</CMPNAME>
+     <SCONAME>I_ROW</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Línea en el parámetro</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SY_TO_RET</CMPNAME>
+     <SCONAME>RS_RETURN</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Parámetro de retorno</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

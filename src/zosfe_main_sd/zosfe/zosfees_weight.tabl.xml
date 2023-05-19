@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSFEES_WEIGHT</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Estructura: Pesos</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZ_PESO_NETO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000038</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000019</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Peso neto</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_PESO_BRUTO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000038</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000019</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Peso bruto</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_PESO_DRENADO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000038</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000019</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Peso drenado</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_UND_PESO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000006</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000003</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Unidad de Peso</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

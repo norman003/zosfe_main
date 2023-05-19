@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSED_TPCFEC</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>DATS</DOMNAME>
+    <HEADLEN>36</HEADLEN>
+    <SCRLEN2>15</SCRLEN2>
+    <DDTEXT>TC Fecha del Tipo de Cambio Aplicado</DDTEXT>
+    <REPTEXT>TC Fecha del Tipo de Cambio Aplicado</REPTEXT>
+    <SCRTEXT_M>TC Fecha</SCRTEXT_M>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

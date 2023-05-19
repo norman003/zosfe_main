@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSFEES_DATA_DET_GR</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Estructura de detalle</DDTEXT>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZOSTB_FEGRDET</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>FE Guia remisión - Detalle</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZITEPOS_STRING</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZITEQTY_STRING</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZITEPBR_STRING</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZITEPBT_STRING</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

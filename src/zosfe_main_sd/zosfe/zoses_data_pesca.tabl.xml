@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSES_DATA_PESCA</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Datos de Pesca</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZMATEMB</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000030</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000015</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Embarcación: Matrícula</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZMATEMBTXT</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000080</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Embarcación: Denominación</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZPESFEC</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000056</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000028</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Fecha de Pesca</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZPESSEM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000006</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000003</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Semana de Pesca</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

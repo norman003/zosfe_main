@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZOSDO_TYPPROCFE</DOMNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000002</LENG>
+    <OUTPUTLEN>000002</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Tipo de Proceso - Facturación Electrónica</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>FC</DOMVALUE_L>
+     <DDTEXT>Facturas</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>BL</DOMVALUE_L>
+     <DDTEXT>Boletas</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>NC</DOMVALUE_L>
+     <DDTEXT>Notas de Crédito</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>ND</DOMVALUE_L>
+     <DDTEXT>Notas de Débito</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RB</DOMVALUE_L>
+     <DDTEXT>Resumen de Boletas</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>BJ</DOMVALUE_L>
+     <DDTEXT>Comunicación de Bajas</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>GR</DOMVALUE_L>
+     <DDTEXT>Guia Remisión</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PR</DOMVALUE_L>
+     <DDTEXT>Percepción</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RT</DOMVALUE_L>
+     <DDTEXT>Retención</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RP</DOMVALUE_L>
+     <DDTEXT>Reversión de Percepciones</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RR</DOMVALUE_L>
+     <DDTEXT>Reversión de Retenciones</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CS</DOMVALUE_L>
+     <DDTEXT>Consulta Status Sunat</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0013</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CP</DOMVALUE_L>
+     <DDTEXT>Consulta Status Portal</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

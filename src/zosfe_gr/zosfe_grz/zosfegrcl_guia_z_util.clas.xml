@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOSFEGRCL_GUIA_Z_UTIL</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Base</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZOSFE</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_LOCK</CMPNAME>
+     <SCONAME>I_BOKNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nº libro</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_LOCK</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_LOCK</CMPNAME>
+     <SCONAME>I_LOTNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de pila interno</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_NEXT</CMPNAME>
+     <SCONAME>I_BOKNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nº libro</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_NEXT</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_NEXT</CMPNAME>
+     <SCONAME>I_LOTNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de pila interno</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_NEXT</CMPNAME>
+     <SCONAME>R_XBLNR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de documento de referencia</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_UNLOCK</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sociedad</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOTNO_UNLOCK</CMPNAME>
+     <SCONAME>I_LOTNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de pila interno</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

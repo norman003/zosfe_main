@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZOSFE_PRO_FEREPROCESO</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>S</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>No existen datos para procesar</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E02</KEY>
+     <ENTRY>Status de Documento no permite Reproceso</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>Documento Sap no existe</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY>Tipo Documento no coincide con Opción seleccionada</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E05</KEY>
+     <ENTRY>Fecha máxima permitida de envío a SUNAT es</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T00</KEY>
+     <ENTRY>Tipo de Documento</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Parámetros de Selección</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Reproceso Factura Electrónica</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DOCSAP</KEY>
+     <ENTRY>DocumSAP</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FACPOR</KEY>
+     <ENTRY>Factura por procesar</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_NUMERA</KEY>
+     <ENTRY>NumerSUNAT</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OPCBL</KEY>
+     <ENTRY>Boletas</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OPCFA</KEY>
+     <ENTRY>Facturas</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OPCGR</KEY>
+     <ENTRY>Guía remisión</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OPCNC</KEY>
+     <ENTRY>Notas de Crédito</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OPCND</KEY>
+     <ENTRY>Notas de Débito</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

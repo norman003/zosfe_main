@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOSSDCL_PRO_EXTRAC_FE_GR</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>FE Guia remisión</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>SU</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>Error de Conexión con el Servicio Web.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY> Verificar log en transacción SRT_UTIL</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E05</KEY>
+     <ENTRY>Error Homologación RUC remitente</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E06</KEY>
+     <ENTRY>Error Homologación RUC destinatario</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E07</KEY>
+     <ENTRY>Error Homologación motivo traslado</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E08</KEY>
+     <ENTRY>Error Homologación unidad de medida</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E09</KEY>
+     <ENTRY>Error Homologación fecha inicio de traslado</ENTRY>
+     <LENGTH>86</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E10</KEY>
+     <ENTRY>Error Homologación transporte publico</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E11</KEY>
+     <ENTRY>Error Homologación transporte privado</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E12</KEY>
+     <ENTRY>Error Homologación modalidad traslado</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E13</KEY>
+     <ENTRY>Error Homologación datos de llegada</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E14</KEY>
+     <ENTRY>Error Homologación datos de partida</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E15</KEY>
+     <ENTRY>Error Homologación Cantidad</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E16</KEY>
+     <ENTRY>Error Homologación Unidad Medida</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E17</KEY>
+     <ENTRY>Error Homologación Código del item</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E18</KEY>
+     <ENTRY>Error de Homologación en el Extractor.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E19</KEY>
+     <ENTRY> Verificar error en el Monitor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E20</KEY>
+     <ENTRY>Error Homologación RUC solicitante</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>No tiene clase-metodo configurado en ZOSTB_ENVWSFE</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I02</KEY>
+     <ENTRY>la FE de</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Pila no aceptada</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>No hay facturas de guia remisión</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>W01</KEY>
+     <ENTRY>Representación impresa de la Guia Remisión Electrónica</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>W02</KEY>
+     <ENTRY>Autorizado mediante resolución de intendencia N° &amp;1/SUNAT</ENTRY>
+     <LENGTH>114</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>BUILD_XML</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Construir xml</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_IS_GRE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Consumir Servicio: Guía de remisión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS dinamico</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Rem</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_HOMO_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios Remisión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_GUIA_REMISION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Guia Remision</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FREE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Limpiar variables y estructuras globales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CONSTANTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valores Constantes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Guia Remisión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DIRECCIONES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener direcciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FORMAT_TEXT_TYPE_PARAGRAPH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Formatear Id Texto tipo párrafo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SUNAT_RESOLUTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Resolución de Intendencia Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_TEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Funcion Read Text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Funcion Read Text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>S4_COMPLETAR_DATOS_NIF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>S/4 Hana: Completar datos NIF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON_RECURSIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json Recursive</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON_REPLACE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json Replace Character Unsported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_DATA_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Guia Remisión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Datos Rem</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Json Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Json Rem</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SPLIT_XBLNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Split Referencia</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>STRING_TO_XSTRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convertir a xstring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SY_TO_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>sy to return</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_REM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar tablas Z Rem</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>XSTRING_TO_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convertir a string</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_GJAHR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Ejercicio</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>PI_NROSAP</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nro SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_REM</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_HOMO_REM</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_HOMO_REM_FIELD</CMPNAME>
+     <SCONAME>CT_RETURN</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tabla con informaciones de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRAE_DATA_GUIA_REMISION_Z</CMPNAME>
+     <SCONAME>ES_DATANOJSON</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Estructura Data Sin Formato JSon</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRAE_DATA_GUIA_REMISION_Z</CMPNAME>
+     <SCONAME>ET_RETURN</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tabla con informaciones de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA_REM_Z</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FORMAT_TEXT_TYPE_PARAGRAPH</CMPNAME>
+     <SCONAME>IS_THEAD</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>SAPscript: Cabecera de texto</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MATERIAL_CODIGO_CUBSO</CMPNAME>
+     <SCONAME>R_MATERIAL_SUNAT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Código de Material</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <SCONAME>I_COMPRESS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo de texto, longitud 1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <SCONAME>I_FULLTEXT</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <SCONAME>I_KUNNR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de deudor</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <SCONAME>I_POSNR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de posición del documento comercial</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_TEXT_VBBK_ZCONST</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de documento comercial</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>S4_COMPLETAR_DATOS_NIF</CMPNAME>
+     <SCONAME>IP_TYPE</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo de texto, longitud 1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SPLIT_XBLNR</CMPNAME>
+     <SCONAME>E_SERCOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Numeración SUNAT de Facturas a Exportar para Envío.</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

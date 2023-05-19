@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSFEES_JSON_CAB_AA</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Facturación Electrónica: Asignación Aplic.Anticipos a Docmto</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZT_NRODOCSAP</FIELDNAME>
+     <ROLLNAME>ZOSED_NRODOCSAP</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_NUMERACION</FIELDNAME>
+     <ROLLNAME>ZOSED_NUMERACION</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_NROPOSICION</FIELDNAME>
+     <ROLLNAME>ZOESD_NROPOSICION</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_AAASOCIADA</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_TIPNUMEOTR</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

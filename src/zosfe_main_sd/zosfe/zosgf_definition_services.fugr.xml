@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de Funciones Definition Services</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOSGF_DEFINITION_SERVICESF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOSGF_DEFINITION_SERVICESTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOSGF_DEFINITION_SERVICES</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOSFM_UPDATE_CDR_IN_SAP</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Actualizar Status CDR</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PI_BUKRS</PARAMETER>
+       <TYP>BUKRS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_TIPODOC</PARAMETER>
+       <TYP>ZOSD_TIPDOC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_NUMERA</PARAMETER>
+       <TYP>ZOSED_NUMERACION</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_STATUS</PARAMETER>
+       <TYP>ZOSED_STATUS_CDR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_ERROREXT</PARAMETER>
+       <TYP>ZOSED_ERROREXT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_IDERRSUN</PARAMETER>
+       <TYP>ZOSED_IDERRSUN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_IDCDR</PARAMETER>
+       <TYP>ZOSED_IDCDR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_FECREC</PARAMETER>
+       <TYP>ZOSED_FECREC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_HORREC</PARAMETER>
+       <TYP>ZOSED_HORREC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_FECRES</PARAMETER>
+       <TYP>ZOSED_FECRES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_HORRES</PARAMETER>
+       <TYP>ZOSED_HORRES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_MENSACDR</PARAMETER>
+       <TYP>ZOSED_MENSACDR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PI_OBSERCDR</PARAMETER>
+       <TYP>ZOSED_OBSERCDR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>PE_ANSWER</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PI_BUKRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sociedad</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_TIPODOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo de documento</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_NUMERA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Numeración SUNAT de Facturas a Exportar para Envío</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estado del Proceso de Facturación Electrónica</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_ERROREXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Error Extractor</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_IDERRSUN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ID Error SUNAT</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_IDCDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>N° CDR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_FECREC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fecha Recepción</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_HORREC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Hora Recepción</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_FECRES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fecha Respuesta</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_HORRES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Hora Respuesta</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_MENSACDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensaje CDR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PI_OBSERCDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Observación CDR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PE_ANSWER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Respuesta</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

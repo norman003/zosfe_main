@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSFEED_DESCTOTOT_NABI_HOMO</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>CHAR04</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Descuentos Totales No afecta a la base imponible Homo</DDTEXT>
+    <REPTEXT>DesctoTot Nabi Homo</REPTEXT>
+    <SCRTEXT_S>DscToNabiH</SCRTEXT_S>
+    <SCRTEXT_M>DesctoTot Nabi Homo</SCRTEXT_M>
+    <SCRTEXT_L>DesctoTot No afecta base imp. Homologado</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

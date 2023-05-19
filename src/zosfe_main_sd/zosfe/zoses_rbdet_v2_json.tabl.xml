@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSES_RBDET_V2_JSON</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Detalle Resumen Boletas - Log WS v2 - Jason Homologa</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>BUKRS</FIELDNAME>
+     <ROLLNAME>BUKRS</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <SHLPORIGIN>D</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_IDENTIFIRESU</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>ID Resúmen</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NROFILA</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>N° Fila</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TIPODOC</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Tipo de documento ( Factura)</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SERIE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Número de serie autorizada por Sunat</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRODOCIADQ</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Número de documento de identidad Cliente</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRODOCMODIF</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Número de serie boleta / Número correlativo boleta que modif</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_ESTADOITEM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Estado del Item</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_IMPTOTVENT</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Importe total de la venta,cesión en uso o del servicio pres</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPGRA</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total Operaciones Gravadas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPEXO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total Operaciones Exoneradas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPINAF</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total Operaciones Inafectas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVALVENO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total valor de venta - Operaciones gratuitas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAOTRCARGOS</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Importe total de sumatoria otros cargos del ítem</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAISC</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total ISC</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAIGV</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total IGV</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAOTRTRI</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Total Otros Tributos</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_WAERK</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Clave de moneda</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRODOCIADQ_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Número de documento de identidad Cliente</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRODOCMODIF_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Número de serie boleta / Número correlativo</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPGRA_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total Operaciones Gravadas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPEXO_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total Operaciones Exoneradas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVVOPINAF_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total Operaciones Inafectas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_TOTVALVENO_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total valor de venta - Operaciones gratuitas</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAOTRCARGOS_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Importe total de sumatoria otros cargos del íte</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAISC_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total ISC</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAIGV_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total IGV</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_SUMAOTRTRI_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Homologado - Total Otros Tributos</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_MONEDA</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Moneda JSon</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_BOL_NPNAD</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000002</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000001</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Boletas: No imprimir N°doc.identidad adquirente</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

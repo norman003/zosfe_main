@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOSSDCL_AMPLIACIONES_FE</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Ampliaciones de Facturación Electrónica</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZOSFE</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ES_DOC_ELECTRONICO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Es Documento Electrónico</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ES_DOC_ORIGINAL_ACEPTADO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Está Aceptado por SUNAT el documento original</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ES_DOC_ORIGINAL_RECHAZADO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Está Rechazado por SUNAT el documento original</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SOLICITANTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Solicitante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_STATUSCDR_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Aceptado</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_STATUSCDR_3</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Rechazado</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_STATUSCDR_4</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Aceptado con Observaciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_STATCDR_ACCEPTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lista de estados de aceptación Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_STATCDR_REJECTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lista de estados de rechazo Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LW_LICENSE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>N° Instalación Sap</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UE_RV60AFZZ_NUMBER_RANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>User-exit: NUMBER_RANGE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>VALIDAR_FECHA_ANULACION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Validación Días máximo para anulación de documento</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>VALIDAR_MOTIVO_ANULACION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Validación de Motivo de Anulación</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

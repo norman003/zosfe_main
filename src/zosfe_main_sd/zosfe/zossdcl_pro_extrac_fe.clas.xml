@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOSSDCL_PRO_EXTRAC_FE</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Extracción de Información Facturas</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZOSFE</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>B01</KEY>
+     <ENTRY>Representación impresa de la Boleta Electrónica</ENTRY>
+     <LENGTH>94</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>Representación impresa de la Nota de Crédito Electrónica</ENTRY>
+     <LENGTH>112</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D01</KEY>
+     <ENTRY>Representación impresa de la Nota de Débito Electrónica</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>Error Homologación RUC</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E02</KEY>
+     <ENTRY>Error Homologación Operaciones Gravadas</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>Error Homologación Operaciones Inafectas</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY>Error Homologación Operaciones Exoneradas</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E05</KEY>
+     <ENTRY>Error Homologación Sumatoria IGV</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E06</KEY>
+     <ENTRY>Error Homologación Sumatoria ISC</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E07</KEY>
+     <ENTRY>Error Homologación Descuento Total</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E08</KEY>
+     <ENTRY>Error Homologación Leyendas</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E09</KEY>
+     <ENTRY>Error Homologación Tipo y N° Documento Relacionado</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E10</KEY>
+     <ENTRY>Error Homologación Total Valor</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E11</KEY>
+     <ENTRY>Venta Operaciones Gratuitas</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E12</KEY>
+     <ENTRY>Error Homologación Tipo de Documento</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E13</KEY>
+     <ENTRY>del Documento que modifica</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E14</KEY>
+     <ENTRY>Error Homologación Tipo de documento</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E15</KEY>
+     <ENTRY>de identidad adquiriente o usuario</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E16</KEY>
+     <ENTRY>Error Homologación Precio de Venta</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E17</KEY>
+     <ENTRY>Error Homologación IGV por Item</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E18</KEY>
+     <ENTRY>Error Homologación ISC por Item</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E19</KEY>
+     <ENTRY>Error Homologación Valor Referencial Unitario</ENTRY>
+     <LENGTH>90</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E20</KEY>
+     <ENTRY>Error Homologación Valor Descuento por Item</ENTRY>
+     <LENGTH>86</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E21</KEY>
+     <ENTRY>Error Homologación Unidad de Medida</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E22</KEY>
+     <ENTRY>Error Motivo de Baja sin dato. Documento:</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E23</KEY>
+     <ENTRY>Error Nombre de la empresa esta en blanco</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E24</KEY>
+     <ENTRY>Error RUC de la empresa esta en blanco</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E25</KEY>
+     <ENTRY>Error Código del Tipo de Documento del emisor en blanco</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E26</KEY>
+     <ENTRY>No se puede enviar a SUNAT  fecha máxima de emisión aceptada</ENTRY>
+     <LENGTH>120</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E27</KEY>
+     <ENTRY>Error Homologación NC/ND no está referenciada a ninguna factura</ENTRY>
+     <LENGTH>126</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E28</KEY>
+     <ENTRY>Error de Homologación en el Extractor.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E29</KEY>
+     <ENTRY>Verificar error en el Monitor</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E30</KEY>
+     <ENTRY>Error verifique parámetros de entrada</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E31</KEY>
+     <ENTRY>Error en importe total de ventas, no se puede mostrar en texto</ENTRY>
+     <LENGTH>124</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E32</KEY>
+     <ENTRY>No existen datos para procesar</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E33</KEY>
+     <ENTRY>Error en el extractor, verificar en el Monitor</ENTRY>
+     <LENGTH>92</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E34</KEY>
+     <ENTRY>Error de Conexión con el Servicio Web.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E35</KEY>
+     <ENTRY>Verificar log en transacción SRT_UTIL</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E36</KEY>
+     <ENTRY>Error en el extractor, verificar en el Monitor</ENTRY>
+     <LENGTH>92</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E37</KEY>
+     <ENTRY>Fecha no tiene versión de vigencia válida</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E38</KEY>
+     <ENTRY>Error Homologación Cubso Sunat</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E39</KEY>
+     <ENTRY>Error Homologación Cargo Total</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E40</KEY>
+     <ENTRY>Error Homologación Cargo por Item</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E41</KEY>
+     <ENTRY>La fecha de generación tiene un plazo de días calendarios</ENTRY>
+     <LENGTH>114</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E45</KEY>
+     <ENTRY>Moneda de doc.origen debe ser igual a moneda doc.actual</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E46</KEY>
+     <ENTRY>NC vinculada a Boleta: Tipo de Nota de Crédito SUNAT no permitido</ENTRY>
+     <LENGTH>118</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E47</KEY>
+     <ENTRY>Formato de OC contiene caracteres no permitidos o mayor a 20 caracteres</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E48</KEY>
+     <ENTRY>NC con motivo 13: el importe debe ser cero (0.00)</ENTRY>
+     <LENGTH>98</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>F01</KEY>
+     <ENTRY>Representación impresa de la Factura Electrónica</ENTRY>
+     <LENGTH>96</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>G01</KEY>
+     <ENTRY>Autorizado mediante resolución de intendencia N° &amp;/SUNAT</ENTRY>
+     <LENGTH>112</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>Documento &amp;1-&amp;2 pendiente de Sincronización</ENTRY>
+     <LENGTH>86</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>J01</KEY>
+     <ENTRY>Representación impresa de la Comunicación de Baja Electrónica</ENTRY>
+     <LENGTH>122</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>R01</KEY>
+     <ENTRY>Representación impresa del Resumen de Boletas Electrónica</ENTRY>
+     <LENGTH>114</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>BUILD_ADITIONAL_TEXT_POSITION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Construir Texto de Posición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BUILD_XML</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Construir xml</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_BAJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_BL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar datos Web Service Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_FA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar datos Web Service Facturas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS Dinamico Final</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_NC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar datos Web Service NC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_ND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar datos Web Service ND</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Res</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CALL_WS_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llama WS para Res Versión 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_FIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_FIELD_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios Resumen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_FIELD_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valida campos obligatorios Resumen Versión 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_HOMO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Verificar Homologaciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONCATENATE_JSON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json y Listar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convertir tipo de cambio</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINAR_AFECTACION_IGV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar Afectación del IGV por Posición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINAR_BOLETA_REBATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar Boleta Rebate</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINAR_VENTA_ANTICIPOS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar Venta Anticipos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINAR_VENTA_ITINERANTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar Venta Itinerante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINAR_VENTA_SERVICIOS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar Venta de Servicios</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINE_FREE_TRANSFER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinar si es Transferencia Gratuita</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINE_MASS_EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinación Masiva de Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINE_SINGLE_EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determinación Individual de Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ES_POSICION_BONIFICADA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Item Bonificado?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_BOLETAS_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Boletas Resúmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_BOLETAS_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Boletas Resúmen Versión 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_COMUNICADO_BAJAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Baja de Documentos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_FA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Facturas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_NC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Notas de Crédito</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_ND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Notas de Débito</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_DATA_RESUMEN_BOLETAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Extractor Boletas Resúmen Verifica versión</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXTRAE_GUIAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Guías de las Facturas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FORMAT_CHARAC_TYPE_PARAGRAPH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Formatear Características de Material tipo párrafo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FORMAT_IDTEXT_TYPE_PARAGRAPH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Formatear Id Texto tipo párrafo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FREE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Limpiar variables y estructuras globales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_AFECTO_IGV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Afecto al IGV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_APLIC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Aplicación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_BACKSLASH_DOUBLEQUOTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Backslash + Comillas dobles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_CAMPO_HOST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo de Constantes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_CAMPO_MANDT_PRD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Mandante Productivo Real</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_CAMPO_TEST_ACT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo de Constantes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_COMPONENT_S4CORE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Componente de software: S4CORE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_COUNTCHAR_DESCR_BS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Cantidad de caracteres de la Descripción del Bien o Servicio</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_CRLF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Retorno de carro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOUBLE_QUOTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Comillas dobles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_EXONER_IGV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Exonerado del IGV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_INAFEC_IGV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inafecto al IGV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_MODU</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Módulo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARVW_1D</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Jerarquia cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARVW_RE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destinatario de Factura</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARVW_RG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Responsable de Pago</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARVW_WE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destinatario de Mcías</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARVW_ZD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Puerto de Carga</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PERU</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clave de país: Perú</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_BJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: Comunicación Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_BL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_FC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: Facturas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_NC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: NC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_ND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: ND</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PREFIX_RB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prefijo: Resumen Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SYSTEM_PRD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Un.Medida de impresión de Sap</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SYSTEM_QAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>N° Instalación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_TABNAME_KONV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nombre de tabla: KONV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_TABNAME_PRCD_ELEMENTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Nombre de tabla: PRCD_ELEMENTS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADDRESS_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Dirección</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADQUIR_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Datos del Adquiriente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_AFECIGV_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Afectación al IGV por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CARDES_VAL_CONDITION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener valores de cardes por condición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CARGOGLO_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Cargos Globales desde Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Cargos Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CERTIFICATES_EXPORT_BY_POS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Certificados de Exportación por Posición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CODIGO_ESTAB_SUNAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Código de Establecimiento Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valores Constantes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CUSTOM_FIELDS_TO_VBRP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Campos de Cliente en VBRP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Facturas (Cabecera y Detalle)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_BAJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Carga data para Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_MINING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Cargar data Minería</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DATA_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Facturas (Cabecera y Detalle) Res</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DESCRIPTION_FROM_TDID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Denominación de ID Texto</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DESCTO_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Descuentos por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DESCTO_ITEM_ES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Descuentos por Item Es.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DESNCND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de NC y ND (actualmente no se usa)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DETRAC_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Detracción</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DETRAC_PREVIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Detraccion preview</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DIR_SEDE_PRODUCTIVA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dirección de Sede Productiva</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DSCGLO_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Descuento Global</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FACT_ANTICIPOS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Facturas de Anticipos aplicadas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FEC_REG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Fecha de Registro Date Time</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FISHERY_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Datos de Pesca</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FI_DOCUMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener documento FI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FORMADEPAGO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Formas de pago al credito</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_GUIA_REMISION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Guía remisión por posición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INCOTERMS_PART_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Iconterms Parte 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LAST_IDENTIFY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene último identificador</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LEYENDAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener leyendas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LEYENDAS_UBL2_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener leyendas UBL 2.1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MATERIAL_CODIGO_CUBSO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Material Código CUBSO Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MAT_DES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de Materiales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MAT_DES_EXP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de Materiales - Factura Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MAT_DES_NAC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de Materiales - Fac/Bol Nacionales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MAT_DES_NOTEXP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de Materiales - NC y ND Exportacion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MAT_DES_NOTNAC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Descripcion de Materiales - NC y ND Nacionales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_NOTASV_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valores para NC y ND</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_OPEEXO_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Operaciones Exoneradas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_OPEGRA_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Operaciones Gravadas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_OPEINA_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Operaciones Inafectas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORDENC_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Orden de Comra</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_OTRTRI_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Otros Tributos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PALLETS_AND_UNITS_EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Pallets y Unidades de Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PARTIDA_ARANCELARIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Partida Arancelaria</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PEDIDO_HEADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Pedido</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PERCEP_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Percepción</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PORT_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Datos Portuarios</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_POSITION_EXPCERTIF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Certificados FDA y FCE Exportación por Posición</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_REFERENCE_SD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Documento SD referencia para NC/ ND</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SID_NUMBER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener SID Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SPELL_AMOUNT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Importe en Letras</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SUMISC_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Sumatoria ISC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SUNAT_RESOLUTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Resolución de Intendencia Sunat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Carga Textos Pos.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_CTABANK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener cuenta bancaria</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_EXPORT_BEP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Texto de Exportación antes del final de posiciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_LINES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Líneas de Texto</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_OBSERVATIONS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Texto de Observaciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_TOTEXP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Texto Incoterm 3: Texto para Total Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TIPISC_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener ISC por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TIPO_ENVIO_EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Tipo de Envío de Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TIP_OP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Tipo de Operacion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TIP_OP2_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Tipo de Operacion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TOTALS_OPTIONAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Totales Opcionales</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALANT_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valor Anticipo por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALIGVANTICIP_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valor IGV de Aplicación Anticipos (Estadístico)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALIGV_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener IGV por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALREF_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valor Referencial Unitario</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALUNI_ITEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Valor Unitario por Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GW_IMP_BOIGV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Mostrar en PDF los Importes Detalle en Boletas IGV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GW_IMP_BOTG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Mostrar en PDF los Importes Detalle en Boletas TG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GW_PARVW_VE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Interlocutor Vendedor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>OBTENER_LUGAR_ENTREGA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Dirección de Lugar de Entrega</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>OBTENER_NUMERO_PLACA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener Número de Placa</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>OTHERS_DISCOUNTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Otros descuentos por cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PRORRATEO_NETO_LOTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prorrateo de Valor Neto en Lotes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>S4_COMPLETAR_DATOS_NIF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>S/4 Hana: Completar datos NIF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON_RECURSIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json Recursive</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SERIALIZE_JSON_REPLACE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Serialize a Json Replace Character Unsported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_AGROINDUSTRY_DATA_PART2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Datos AgroIndustria - Parte 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_AGRUPA_POS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrupar materiales pos.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CABDET_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Cabecera/Detalle Res</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CABDET_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtener y Crear Data Z Resumen de Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HEADER_EXPCERTIF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Certificaciones para Exportación</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HEADER_TEXTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Formar Textos de Cabecera</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HEADER_WEIGHT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Pesos Cabecera</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_CAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Cabecera</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_DET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Detalle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Datos Resúmen Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HOMO_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Homologar Datos Resúmen Boletas Version 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JEISON_BAJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Valores Jeison Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JEISON_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Valores Jeison Resúmen Boletas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cabecera</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CAB_MAIN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cabecera Main</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CAB_UBL2_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cabecera Ubl 2.1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CAB_UBL2_1_CUSTOMER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cabecera Ubl 2.1 personalizaciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CARDES_UBL2_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cargos y descuentos Ubl 2.1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_CLI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Cliente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_DET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Detalle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_DET_MAIN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Detalle Main</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_DET_UBL2_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Detalle Ubl 2.1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_DET_UBL2_1_CUSTOMER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear JSon Detalle Ubl 2.1 personalizaciones</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JSON_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Valores Jeison Resúmen Boletas Versión 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_NEW_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setear Nuevo ID Resumen Boletas/ Comunicado Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_VBRP_FINAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Llenar VBRP final</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SPLIT_XBLNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Split Referencia</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>STRING_TO_XSTRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convertir a xstring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SY_TO_RET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sy to return</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_IDENTI_BAJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar Identificador Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_IDENTI_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar Identificador Resúmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_IDENTI_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar Identificador Resúmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_BAJAS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualiza tablas Z de Bajas</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_RES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualiza tablas Z Resumen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLA_RES_V2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualiza tablas Z Resumen Versión 2.0</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_TABLES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar tablas Z</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_VBRK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar datos cabecera</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>UPD_VBRP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Actualizar datos detalle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>XSTRING_TO_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convertir a string</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_MAIN</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_WS_RES</CMPNAME>
+     <SCONAME>PE_MESSAGE</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tabla con informaciones de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>E_MONTO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valor de la condición</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>E_TCAMBIO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>NO SE UTILIZA: Factor desviación ctd.p.material reemplazante</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>I_DATE</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo de tipo DATS</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>I_MONTO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valor de la condición</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>I_WAERS_F</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clave de moneda</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_LOCAL_CURRENCY</CMPNAME>
+     <SCONAME>I_WAERS_L</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clave de moneda</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_AFECIGV_ITEM</CMPNAME>
+     <SCONAME>PE_TRIBUTO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Ámbito no definido , posiblemente para niveles patch</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARDES_VAL_CONDITION</CMPNAME>
+     <SCONAME>I_CHECK_EXPOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOGLO_ITEM</CMPNAME>
+     <SCONAME>IP_POSNR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Posición de factura</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOGLO_ITEM</CMPNAME>
+     <SCONAME>I_CHECK_EXPOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <SCONAME>I_CHECK_EXPOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <SCONAME>I_CODTRIB</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo datos 4 caracteres</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <SCONAME>I_PSTYV</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo de posición de documento comercial</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <SCONAME>PI_KNUMV</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de la condición de documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CARGOS_ITEM</CMPNAME>
+     <SCONAME>PI_POSNR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Posición de factura</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DESCTO_ITEM</CMPNAME>
+     <SCONAME>I_CHECK_EXPOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETRAC_HEADER</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETRAC_PREVIEW</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DSCGLO_ITEM</CMPNAME>
+     <SCONAME>I_CHECK_EXPOR</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Casilla de selección</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FACT_ANTICIPOS</CMPNAME>
+     <SCONAME>E_MWSBP</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Monto Anticipo</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TIP_OP2_1</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALIGV_ITEM</CMPNAME>
+     <SCONAME>PE_MWSBP_CAB</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Importe del impuesto en moneda del documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_HEADER_TEXTS</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JSON_CAB_UBL2_1_CUSTOMER</CMPNAME>
+     <SCONAME>IT_FORMAPAGO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo tabla</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPD_TABLES</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPD_VBRK</CMPNAME>
+     <SCONAME>IS_OPTIONS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Opciones de Extracción</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

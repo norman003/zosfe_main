@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSES_FECAB3</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Facturación Electrónica para SUNAT Cabecera 3</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZT_DIR_SDPR</FIELDNAME>
+     <ROLLNAME>ZOSED_DIRSDPR</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_DATEXP2</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Datos de Exportación - Parte 2</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_NOTIFY</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Notify</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_ERNAM</FIELDNAME>
+     <ROLLNAME>ERNAM</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_TEXT_BEP</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000230</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000115</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Texto antes del final de posiciones</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_CLIE_DIR</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Datos Dirección Cliente Ampliados</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZT_REF_SDFI</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000080</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Referencia Documento SD/ Documento FI</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

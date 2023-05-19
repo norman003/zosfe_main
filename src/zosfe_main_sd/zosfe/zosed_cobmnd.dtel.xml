@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSED_COBMND</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>WAERS</DOMNAME>
+    <HEADLEN>31</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>31</SCRLEN3>
+    <DDTEXT>COB Moneda del Importe de Cobro</DDTEXT>
+    <REPTEXT>COB Moneda del Importe de Cobro</REPTEXT>
+    <SCRTEXT_S>COB Mon</SCRTEXT_S>
+    <SCRTEXT_M>COB Moneda</SCRTEXT_M>
+    <SCRTEXT_L>COB Moneda del Importe de Cobro</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

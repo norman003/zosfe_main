@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSED_TOT_OP_GRA</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>WERTV8</DOMNAME>
+    <HEADLEN>26</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Total Operaciones Gravadas</DDTEXT>
+    <REPTEXT>Total Operaciones Gravadas</REPTEXT>
+    <SCRTEXT_S>Tot Ope Gr</SCRTEXT_S>
+    <SCRTEXT_M>Total Oper. Gravadas</SCRTEXT_M>
+    <SCRTEXT_L>Total Operaciones Gravadas</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

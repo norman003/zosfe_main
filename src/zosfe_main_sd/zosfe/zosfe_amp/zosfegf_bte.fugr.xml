@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Bte para FE</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOSFEGF_BTETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOSFEGF_BTE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOSFE_PROCESS_00001420</FUNCNAME>
+     <SHORT_TEXT>Beschreibung der Prozess-Schnittstelle 00001420</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_BKPF</PARAMETER>
+       <DBFIELD>BKPF</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_BSEG</PARAMETER>
+       <DBFIELD>BSEG</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_AKTYP</PARAMETER>
+       <DBFIELD>T020-AKTYP</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_NOINPUT</PARAMETER>
+       <DBSTRUCT>OFIBM</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_INVISIBLE</PARAMETER>
+       <DBSTRUCT>OFIBM</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_BKPF</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BSEG</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_AKTYP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_NOINPUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_INVISIBLE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZOSFE_PROCESS_00001420>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZOSFE_PROCESS_00001420</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0011</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZOSFE_PROCESS_00001420</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp;  = &apos;Dynpromodifikation Belegzeilen&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001420&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp;  = &apos;PROCESS&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Prozess wird vor Prozessieren des Belegzeilen-Dynpros durchlaufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>SCHNITTSTELLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>An die Zusatzkomponente werden die aktuellen Inhalte der Belegkopf-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Felder und der Belegzeile übergeben. In einem Zusatz-Baustein kann in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Abhängigkeit dieser Inhalte besimmt werden, welche sichtbaren Felder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgeblendet werden sollen und bei welchen eingabebereiten Feldern die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eingabebereitschaft zurückgenommen werden soll. Dies ist jeweils durch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einen Eintrag in die Tabelle T_NOINPUT bzw. T_INVISIBLE möglich. Diese</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tabellen werden leer an den Zusatzbaustein übergeben. Ein Eintrag des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Feldes BSEG-SGTXT in der Tabelle T_INVISIBLE verursacht ein Ausblenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des Felders Segmenttext.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine Ausnahme bildet die Möglichkeit, Änderungen an Langtexten eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beleges zu verbieten. Um dies zu erreichen, erzeugen Sie in der Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einen Eintrag mit dem Inhalt &apos;OF05L-LTEXT&apos;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZOSFE_PROCESS_00001420>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSES_RBCAB_JSON</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Cabecera Resumen Boletas - Json Homolagación</DDTEXT>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>BUKRS</FIELDNAME>
+     <ROLLNAME>BUKRS</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <SHLPORIGIN>D</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_IDENTIFIRESU</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>ID Resúmen</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_FECGENRESUME</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Fecha de Generación del Resúmen</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_FEMISION</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Fecha de Emisión.</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NEMPRESA</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Apellidos y nombres,denominación o razón social</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRORUC</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Número de RUC</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_FIRDIGITAL</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Firma Digital</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_VERSIUBL</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Versión UBL</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_VERSIESTRUDOC</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Versión Estructura del Documento</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_VERSIVIGEN</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Versión de Vigencia de Facturación Electronica SUNAT</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZZ_NRORUC_H</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>g</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>STRG</DATATYPE>
+     <MASK>  STRG</MASK>
+     <DDTEXT>Número de RUC - Homologado</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

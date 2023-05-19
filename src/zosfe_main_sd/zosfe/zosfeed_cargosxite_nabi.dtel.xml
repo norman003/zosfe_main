@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSFEED_CARGOSXITE_NABI</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>WERTV7</DOMNAME>
+    <HEADLEN>18</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Cargos por Item no afecta a la base imponible</DDTEXT>
+    <REPTEXT>Car Noabi</REPTEXT>
+    <SCRTEXT_S>Car Noabi</SCRTEXT_S>
+    <SCRTEXT_M>Car Noabi</SCRTEXT_M>
+    <SCRTEXT_L>CargosItem no afecta a la base imponible</SCRTEXT_L>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

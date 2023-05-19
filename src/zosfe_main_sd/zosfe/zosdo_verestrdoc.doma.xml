@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZOSDO_VERESTRDOC</DOMNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000005</LENG>
+    <OUTPUTLEN>000005</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Versión de la estructura del documento</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>1.0</DOMVALUE_L>
+     <DDTEXT>Versión para UBL 2.0</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>1.1</DOMVALUE_L>
+     <DDTEXT>Versión para UBL 2.0 resumen de boleta</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>2.0</DOMVALUE_L>
+     <DDTEXT>Versión para UBL 2.1</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

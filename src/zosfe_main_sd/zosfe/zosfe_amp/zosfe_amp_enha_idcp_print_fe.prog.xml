@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZOSFE_AMP_ENHA_IDCP_PRINT_FE</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>S</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>No se puede enviar a SUNAT.</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I02</KEY>
+     <ENTRY>Verificar serie y Clase de Documento</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I03</KEY>
+     <ENTRY>Verificar estado de documento referencia</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I04</KEY>
+     <ENTRY>Serie y Correlativo ya han sido usados</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I05</KEY>
+     <ENTRY>Fecha máxima permitida es</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I06</KEY>
+     <ENTRY>Comprobante en referencia sin CDR aceptado</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I07</KEY>
+     <ENTRY>Fecha Comp. Referencia menor a</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I08</KEY>
+     <ENTRY>Clase de documento no corresponde</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I09</KEY>
+     <ENTRY>a Pila seleccionada</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Ampliación IDCP Impresion de FE</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

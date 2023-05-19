@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_VIEW" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD25V>
+    <VIEWNAME>ZOSVA_CATAHOMO06</VIEWNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <AGGTYPE>V</AGGTYPE>
+    <ROOTTAB>ZOSTB_CATAHOMO06</ROOTTAB>
+    <DDTEXT>Catálogo N° 06: Códigos de tipos de documento de identidad</DDTEXT>
+    <VIEWCLASS>C</VIEWCLASS>
+    <CUSTOMAUTH>G</CUSTOMAUTH>
+    <GLOBALFLAG>X</GLOBALFLAG>
+   </DD25V>
+   <DD26V_TABLE>
+    <DD26V>
+     <VIEWNAME>ZOSVA_CATAHOMO06</VIEWNAME>
+     <TABNAME>ZOSTB_CATAHOMO06</TABNAME>
+     <TABPOS>0001</TABPOS>
+     <FORTABNAME>ZOSTB_CATAHOMO06</FORTABNAME>
+    </DD26V>
+   </DD26V_TABLE>
+   <DD27P_TABLE>
+    <DD27P>
+     <VIEWFIELD>MANDT</VIEWFIELD>
+     <TABNAME>ZOSTB_CATAHOMO06</TABNAME>
+     <FIELDNAME>MANDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+    </DD27P>
+    <DD27P>
+     <VIEWFIELD>STCDT</VIEWFIELD>
+     <TABNAME>ZOSTB_CATAHOMO06</TABNAME>
+     <FIELDNAME>STCDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <LOGFLAG>X</LOGFLAG>
+    </DD27P>
+    <DD27P>
+     <VIEWFIELD>ZZ_CODIGO_SUNAT</VIEWFIELD>
+     <TABNAME>ZOSTB_CATAHOMO06</TABNAME>
+     <FIELDNAME>ZZ_CODIGO_SUNAT</FIELDNAME>
+    </DD27P>
+   </DD27P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZOSED_RETITP</ROLLNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <DOMNAME>WERT7</DOMNAME>
+    <HEADLEN>25</HEADLEN>
+    <SCRLEN2>20</SCRLEN2>
+    <DDTEXT>RET Importe Total a Pagar = Base - Retención</DDTEXT>
+    <REPTEXT>RET Importe total a pagar</REPTEXT>
+    <SCRTEXT_M>RET Imp pagar</SCRTEXT_M>
+    <DTELMASTER>S</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOSTB_CATALOGO23</TABNAME>
+    <DDLANGUAGE>S</DDLANGUAGE>
+    <TABCLASS>TRANSP</TABCLASS>
+    <CLIDEP>X</CLIDEP>
+    <DDTEXT>Catálogo N° 23: Regímenes de Retención</DDTEXT>
+    <CONTFLAG>G</CONTFLAG>
+   </DD02V>
+   <DD09L>
+    <TABNAME>ZOSTB_CATALOGO23</TABNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <TABKAT>0</TABKAT>
+    <TABART>USER</TABART>
+    <BUFALLOW>N</BUFALLOW>
+   </DD09L>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>MANDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>MANDT</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>CODSUN</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>ZOSED_CODSUN023</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>DESSUN</FIELDNAME>
+     <ROLLNAME>ZOSED_DESCRSUNAT</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
